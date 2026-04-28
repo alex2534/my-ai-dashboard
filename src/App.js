@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { Send, Terminal, Cpu, Square, Cloud, HardDrive, AlertCircle } from 'lucide-react';
+import { Send, Terminal, Square, Cloud, HardDrive, AlertCircle } from 'lucide-react';
 import ReactMarkdown from 'react-markdown';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism';
