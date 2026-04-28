@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { Send, Terminal, Square, Cloud, HardDrive, AlertCircle } from 'lucide-react';
+import { Send, Terminal, Square, Cloud, HardDrive } from 'lucide-react';
 import ReactMarkdown from 'react-markdown';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism';
@@ -8,7 +8,6 @@ import Groq from "groq-sdk";
 function App() {
   const [input, setInput] = useState('');
   const [chat, setChat] = useState([]);
-  const [model, setModel] = useState('qwen2.5-coder:32b');
   const [isStreaming, setIsStreaming] = useState(false);
   const [error, setError] = useState(null);
   
