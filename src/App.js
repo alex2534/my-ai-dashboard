@@ -8,6 +8,7 @@ import Groq from "groq-sdk";
 function App() {
   const [input, setInput] = useState('');
   const [chat, setChat] = useState([]);
+  const [model, setModel] = useState('qwen2.5-coder:32b');
   const [isStreaming, setIsStreaming] = useState(false);
   const [error, setError] = useState(null);
   
@@ -27,6 +28,7 @@ function App() {
     if (scrollRef.current) {
       scrollRef.current.scrollTo({ top: scrollRef.current.scrollHeight, behavior: 'smooth' });
     }
+    setModel('qwen2.5-coder:32b'); // Define o modelo padrão (pode ser alterado conforme necessário)
   }, [chat]);
 
   const stopStreaming = () => {
